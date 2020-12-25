@@ -11,7 +11,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Process[] processes = Process.GetProcesses();
+            Process[] processes = Process.GetProcesses();//get prc
             foreach (var proc in processes)
             {
                 if (!string.IsNullOrEmpty(proc.MainWindowTitle))
